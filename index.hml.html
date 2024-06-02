@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary!</title>
+  <style>
+    body {
+
+  background-color: #ff0080; /* Light gray background */
+  font-family: Lucida Handwriting; /* Fallback for sans-serif */
+  font-size: 25px;
+  border-style: double;
+  border-style: dotted;
+  border-width: 5px;
+  padding: 100px;
+  color:white;
+  border-color: white;
+  border-radius: 25px;
+  line-height: 1.5;
+  margin: 20px; /* Adjust margins as needed */
+  padding: 10px; /* Adjust padding as needed */
+}
+    center{
+      margin-top: 200px;
+    }
+    input {
+  padding: 12px 20px;
+  border-radius: 25px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: black;
+  background-color: white;
+  color: #ff0080;
+}
+button{
+padding: 12px 20px;
+border-radius: 25px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: white;
+  color: #ff0080;
+
+}
+  </style>
+</head>
+<body>
+  <center>
+  <h1>Happy Anniversary!</h1>
+  <p>To unlock the love letter, enter the secret password:</p>
+  <input type="password" id="password" placeholder="Enter Password">
+  <button onclick="checkPassword()">Go Ahead</button>
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      if (password === "10062021") {
+        window.location.href = "loveletter.html";
+      } else {
+        alert("Incorrect password. Try again!");
+      }
+    }
+  </script>
+</body>
+</html>
